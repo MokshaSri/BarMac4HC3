@@ -17,6 +17,8 @@ button {
     color: #fff;
     background-color: #32325b;
     border-color: #32325b;
+    width: 20rem;
+    height: 5rem;
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
