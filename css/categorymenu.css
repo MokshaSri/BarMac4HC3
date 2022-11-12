@@ -1,0 +1,71 @@
+html, 
+body {
+    height: 100%;
+}
+body {
+    background-color:#32325b;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0.75rem;
+    margin: 0;
+}
+.header{
+    display:flex;
+    justify-content: space-around;
+}
+
+.Cart {
+    cursor: pointer;
+    color: black;
+    background-color: #32325b;
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    border: 0.1rem solid transparent;
+    padding-left: 6px 12px;
+    font-size: 2rem;
+    font-family: "Source Code Pro", sans-serif;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: yellow;
+}
+h1{
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color:white;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+
+}
+.categoriesSections{
+    padding-left: 3rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.categoryCard{
+    height: 18rem;
+    width: 15rem;
+    /* border: 0.1rem solid black; */
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    float: center;
+    clear: center;
+}
+img{
+    float: center;
+}
