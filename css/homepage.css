@@ -50,12 +50,13 @@ button {
     cursor: pointer;
     color: #fff;
     background-color: #32325b;
-    border-color: #32325b;
+    width: 20rem;
+    height: 5rem;
     display: inline-block;
     font-weight: 200;
     line-height: 1.5;
     text-align: center;
-    border: 1px solid transparent;
+    border: 0.1rem solid white;
     padding-left: 6px 12px;
     font-size: 2rem;
     font-family: "Source Code Pro", sans-serif;
