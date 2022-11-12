@@ -2,6 +2,11 @@
     display: flex; 
     justify-content: center;
     padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+body {
+    background-color:#32325b;
 }
 .buttonsection {
     display: flex; 
@@ -43,9 +48,9 @@ button:hover {
 
 h1 {
     text-align: center;
-    padding-bottom: 1rem;
     font-size: 3rem;
-    color: #32325b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 img {
     padding-left: 1rem;
