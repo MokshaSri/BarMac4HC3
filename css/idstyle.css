@@ -19,6 +19,7 @@ button {
     border: 1px solid transparent;
     padding-left: 6px 12px;
     font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     margin-left: 1rem;
