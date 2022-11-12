@@ -1,0 +1,122 @@
+/*Start Global*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 12px;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0 0 -55px;
+    color: #ffffff;
+}
+h1, h3 {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 9.4px;
+    margin: 0 0 15px;
+    color: #ffffff
+}
+
+/*End Global*/
+
+/*Start Header*/
+.headercenter {
+    display: flex;
+    justify-content: center;
+}
+header {
+    height: calc(100vh - 22px);
+    background-size: cover;
+    background: #32325b;
+    padding: 20px 70px;
+}
+
+/*End Header*/
+
+/*Start button*/
+.buttonsection {
+    display: flex; 
+    justify-content: center;
+}
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #32325b;
+    border-color: #32325b;
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding-left: 6px 12px;
+    font-size: 2rem;
+    font-family: "Source Code Pro", sans-serif;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+/*End Button*/
+
+/*Start Login pieces*/
+.wrap{
+  padding:120px 0;
+  font-size:62px;
+  color:#888;
+  width:400px;
+  font-family:"Source Code Pro", sans-serif;
+  margin:0 auto;
+  text-align:center;
+  display: flex; 
+  justify-content: center;
+}
+
+input{
+  font-family: "Source Code Pro", sans-serif;
+  font-weight:300;
+  border:0;
+  border-bottom:1px solid #ff5407;
+  width:100%;
+  height:36px;
+  font-size:26px;
+}
+
+input:focus{
+  outline:none;
+  box-shadow:none;
+  background:#ffeae2;
+}
+
+.login{
+  background:#a0a0a0;
+  color:#fff;
+  float:right;
+}
+
+.login.buttonafter {
+    background:#14a03d;
+}
+/*Finish login pieces */
