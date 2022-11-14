@@ -15,44 +15,50 @@ let onMenuArray = [
   },
   {
     id: 2,
-    label: "Margarita",
-    pictureUrl:"./images/editmenu/margarita.jpg",
-    imageAlt: "Margarita"
+    label: "Clover Cocktail",
+    pictureUrl:"./images/editmenu/cloverclub.jpg",
+    imageAlt: "Clover Cocktail"
   },
   {
     id: 3,
-    label: "Margarita",
-    pictureUrl:"./images/editmenu/margarita.jpg",
-    imageAlt: "Margarita"
+    label: "Fruit Cocktail",
+    pictureUrl:"./images/editmenu/fruitblast.jpg",
+    imageAlt: "Fruit Cocktail"
   },
   {
     id: 4,
-    label: "Margarita",
-    pictureUrl:"./images/editmenu/margarita.jpg",
-    imageAlt: "Margarita"
+    label: "Grasshopper",
+    pictureUrl:"./images/editmenu/grasshopper.jpg",
+    imageAlt: "Grasshopper"
   },
-  {
-    id: 5,
-    label: "Margarita",
-    pictureUrl:"./images/editmenu/margarita.jpg",
-    imageAlt: "Margarita"
-  }
 ];
 
 
 let offMenuArray = [
     {
+      id: 5,
+      label: "Paloma",
+      pictureUrl:"./images/editmenu/paloma.jpg",
+      imageAlt: "Paloma"
+    },
+    {
       id: 6,
-      label: "Margarita",
-      pictureUrl:"./images/editmenu/margarita.jpg",
-      imageAlt: "Margarita"
+      label: "Rainbow Cocktail",
+      pictureUrl:"./images/editmenu/rainbow.jpg",
+      imageAlt: "Rainbow Cocktail"
     },
     {
       id: 7,
-      label: "Margarita",
-      pictureUrl:"./images/editmenu/margarita.jpg",
-      imageAlt: "Margarita"
+      label: "Sunset Cocktail",
+      pictureUrl:"./images/editmenu/sunset.jpg",
+      imageAlt: "Sunset Cocktail"
     },
+    {
+    id: 8,
+    label: "Rasberry Cocktail",
+    pictureUrl:"./images/editmenu/cocktail.jpg",
+    imageAlt: "Margarita"
+  },
   ];
 
 
@@ -62,22 +68,20 @@ let htmlCode = '';
 htmlCode =
 htmlCode +
 `
-<div class="container-fluid mt-4">
-<div class="row justify-content-center">
+<div class="container-fluid py-2 yellowbox rounded">
+<h2 class="font-weight-light">Active Menu Items</h2>
+<div class="d-flex flex-row flex-nowrap">
 `
-
 onMenuArray.forEach(function(onMenuObjects) {
   htmlCode =
     htmlCode +
     `
-    <div class="col-auto mb-3">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${onMenuObjects.pictureUrl}" alt="${onMenuObjects.imageAlt}">
+    <div class="card" style="width: 200px; tw">
+        <img class="card-img-top" src="${onMenuObjects.pictureUrl}"  width="200" height="200" alt="${onMenuObjects.imageAlt}">
         <div class="card-body">
         <h5 class="card-title">${onMenuObjects.label}</h5>
         <a href="#" class="btn btn-danger" onclick="removeItem(${onMenuObjects.id});">Remove</a>
-    </div>
-    </div>
+        </div>
     </div>
   `;
 });
@@ -95,28 +99,26 @@ onMenuCards.innerHTML = htmlCode;
 
 
 
-
 function createOffMenu(){
 let htmlCode = '';
 htmlCode =
 htmlCode +
 `
-  <div class="container-fluid mt-4">
-    <div class="row justify-content-center">
+<div class="container-fluid py-2 yellowbox rounded">
+<h2 class="font-weight-light">Inactive Menu Items</h2>
+<div class="d-flex flex-row flex-nowrap">
 `
 
 offMenuArray.forEach(function(offMenuObjects) {
   htmlCode =
     htmlCode +
     `
-    <div class="col-auto mb-3">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${offMenuObjects.pictureUrl}" alt="${offMenuObjects.imageAlt}">
+    <div class="card" style="width: 200px;">
+        <img class="card-img-top" src="${offMenuObjects.pictureUrl}" width="200" height="200" alt="${offMenuObjects.imageAlt}">
         <div class="card-body">
         <h5 class="card-title">${offMenuObjects.label}</h5>
         <a href="#" class="btn btn-success" onclick="addItem(${offMenuObjects.id});">Add</a>
-    </div>
-    </div>
+        </div>
     </div>
   `;
 });
@@ -125,7 +127,6 @@ htmlCode +
 `</div>
 </div>
 `;
-
 
 const offMenuCards = document.querySelector(".off-menu-cards");
 offMenuCards.innerHTML = htmlCode;

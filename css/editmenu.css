@@ -1,0 +1,38 @@
+
+
+
+.card-body{
+    width: 200;
+    height: 100;
+    max-height: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    min-width: 300px;
+
+
+}
+
+header{
+    height: calc(100vh - 22px);
+    background-size: cover;
+    background: #32325b;
+    padding: 20px 70px;
+
+}
+
+.yellowbox{
+    background: #e6b908;
+    margin-bottom: 20px;
+
+
+}
+
+html{
+
+    background-size: cover;
+    background: #32325b;
+
+
+
+}
+
