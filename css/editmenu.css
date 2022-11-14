@@ -36,3 +36,8 @@ html{
 
 }
 
+.wrapScroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    border: 1px solid orange;
+  }
