@@ -68,9 +68,9 @@ let htmlCode = '';
 htmlCode =
 htmlCode +
 `
-<div class="container-fluid py-2 yellowbox rounded">
+<div class="container py-2 yellowbox rounded >
 <h2 class="font-weight-light">Active Menu Items</h2>
-<div class="d-flex flex-row flex-nowrap">
+<div class="row flex-nowrap wrapScroll" >
 `
 onMenuArray.forEach(function(onMenuObjects) {
   htmlCode =
@@ -104,9 +104,9 @@ let htmlCode = '';
 htmlCode =
 htmlCode +
 `
-<div class="container-fluid py-2 yellowbox rounded">
+<div class="container py-2 yellowbox rounded >
 <h2 class="font-weight-light">Inactive Menu Items</h2>
-<div class="d-flex flex-row flex-nowrap">
+<div class="row flex-nowrap wrapScroll" >
 `
 
 offMenuArray.forEach(function(offMenuObjects) {
