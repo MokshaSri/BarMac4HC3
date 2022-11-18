@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+.headercenter {
+    display: flex;
+    justify-content: center;
+}
+header {
+    height: calc(70vh - 22px);
+    background-size: cover;
+    background: #32325b;
+    padding: 20px 70px;
+}
+
 .imagesection {
     display: flex; 
     justify-content: center;
