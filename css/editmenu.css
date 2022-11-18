@@ -15,7 +15,7 @@
 header{
     height: calc(100vh - 22px);
     background-size: cover;
-    background: #32325b;
+    background: #ffffff;
     padding: 20px 70px;
 
 }
@@ -23,6 +23,7 @@ header{
 .yellowbox{
     background: #e6b908;
     margin-bottom: 20px;
+    border: 2px solid #8e7204;
 
 
 }
@@ -30,7 +31,7 @@ header{
 html{
 
     background-size: cover;
-    background: #32325b;
+    background: #ffffff;
 
 
 
