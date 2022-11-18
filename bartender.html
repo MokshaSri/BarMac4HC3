@@ -11,7 +11,7 @@
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand navbar-dark" style="background-color: #32325b;">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="./">
+		<a class="navbar-brand" href="homepage.html">
 		Bar McMaster - Bartender
 		</a>
 		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -43,24 +43,24 @@
         <div class="row">
             <div class="col center-block text-center">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="lateOne" href="openorders.html?product=1" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: ###</h5>
-                        <small>Table Number: ##</small>
+                        <h5 class="mb-1">Order Number: 102</h5>
+                        <small>Table Number: 2</small>
                       </div>
                       <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="openorders.html?product=2" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: ###</h5>
-                        <small>Table Number: ##</small>
+                        <h5 class="mb-1">Order Number: 103</h5>
+                        <small>Table Number: 7</small>
                       </div>
                       <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a href="openorders.html?product=3" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: ###</h5>
-                        <small>Table Number: ##</small>
+                        <h5 class="mb-1">Order Number: 104</h5>
+                        <small>Table Number: 4</small>
                       </div>
                       <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
@@ -68,26 +68,31 @@
             </div>
             <div class="col center-block text-center">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div id="urgOne" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: ###</h5>
-                        <small>Table Number: ##</small>
+                        <h5 class="mb-1">Order Number: 102</h5>
+                        <small>Table Number: 2</small>
                       </div>
-                      <button type="button" class="btn btn-success">START</button>
-                      <button type="button" class="btn btn-danger">DELAY</button>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <button type="button" class="btn btn-primary" onclick="startNotif()">START</button>
+                      <button type="button" class="btn btn-danger" onclick="delayNotif()">DELAY</button>
+                    </div>
+                    <div id="urgTwo" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: ###</h5>
-                        <small>Table Number: ##</small>
+                        <h5 class="mb-1">Order Number: 16</h5>
+                        <small>Table Number: 3</small>
                       </div>
-                      <button type="button" class="btn btn-warning">ALERT</button>                    </a>
+                      <button type="button" class="btn btn-success" onclick="alertNotif()">COMPLETE</button>
+                      <button type="button" class="btn btn-danger" onclick="delayNotif()">DELAY</button>                    
+                    </div>
                   </div>
             </div>
         </div>
     </div>
 	<script src=
 "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	></script>
+  <script src=
+"js/barnotifications.js"
 	></script>
 </body>
 </html>
