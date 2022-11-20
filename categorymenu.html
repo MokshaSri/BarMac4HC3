@@ -1,62 +1,89 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:#32325b">
 <head>
 <meta charset="utf-8">
 <title>Category Menu</title>
 <!-- Stylesheets -->
-<link href="css/categorymenu.css" rel="stylesheet">
+<link href="css/editmenu.css" rel="stylesheet">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+<link href="bootstrap-5.2.2-dist/css/bootstrap.min.css"
+rel="stylesheet"
+/>
 </head>
 
-<body>
-    <div class="header">
-       <h1 class="tableNumber">
-            Table Number 4
-       </h1>
-       <h1 class="RestaurantName">
-            Bar McMaster
-        </h1>
-        <button class="Cart">
-            Cart
-        </button>
+
+<nav class="navbar navbar-expand navbar-dark" style="background-color:#32325b">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="homepage.html">
+        Bar McMaster - Table 4 
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+        <!-- NAVBAR LINKS -->
+        <li class="nav-item">
+            <a class="nav-link active" href="categorymenu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+        </ul>
     </div>
-    <hr/>
-    <div class="categoriesSections">
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:15rem;" src="images/classicsdrink.png" alt="Classic drinks">
-            <h2 style="text-align: center;">Classic Drinks</h2>
+    </nav>
+
+<body style="background-color:#32325b">
+
+    <div class="container py-2 yellowbox rounded" >
+        <h2 class="font-weight-light">Menu Items</h2>
+        <div class="row flex-nowrap wrapScroll" >
+        <div class="card" style="width: 220px;">
+            <img class="card-img-top" src="./images/classicsdrink.png" width="100" height="200" alt="Image">
+            <div class=" d-flex flex-column">
+            <a href="#" class="btn btn-success">Classic Drink</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:15rem;" src="images/fruitydrink.png" alt="Fruity drinks">
-            <h2 style="text-align: center;"> Fruity Drinks</h2>
+        <div class="card" style="width: 220px;">
+            <img class="card-img-top" src="./images/fruitydrink.png" width="100" height="200" alt="Image">
+            <div class=" d-flex flex-column">
+                <a href="#" class="btn btn-success">Fruity Drink</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:10rem;padding-left:2rem;" src="images/wine.png" alt="Wine">
-            <h2 style="text-align: center;"> Wine</h2>
+        <div class="card" style="width: 220px;">
+            <img class="card-img-top" src="./images/wine.png" width="100" height="200" alt="Image">
+            <div class=" d-flex flex-column">
+                <a href="#" class="btn btn-success">Wine</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:10rem;padding-left:2rem;" src="images/beer.png" alt="Beer">
-            <h2 style="text-align: center;"> Beer</h2>
+        <div class="card" style="width: 220px;">
+            <img class="card-img-top" src="./images/beer.png" width="100" height="200" alt="Image">
+            <div class="d-flex flex-column">
+                <a href="#" class="btn btn-success">Beer</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:10rem;padding-left:3rem;" src="images/liquor.png" alt="Liquor">
-            <h2 style="text-align: center;"> Liquor</h2>
+        <div class="card" style="width: 220px;">
+            <img class="card-img-top" src="./images/snack.png" width="100" height="200" alt="Image">
+            <div class="d-flex flex-column">
+                <a href="#" class="btn btn-success " >Snack</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:15rem;" src="images/mocktails.png" alt="Mocktails">
-            <h2 style="text-align: center;"> Mocktails</h2>
+        <div class="card" style="width: 215px;">
+            <img class="card-img-top" src="./images/burger.png" width="100" height="200" alt="Image">
+            <div class=" d-flex flex-column">
+                <a href="#" class="btn btn-success">Burger</a>
+            </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:15rem;" src="images/snack.png" alt="Snack">
-            <h2 style="text-align: center;"> Snacks</h2>
+      </div>
         </div>
-        <div class="categoryCard"> 
-            <img style="height:15rem;width:15rem;" src="images/burger.png" alt="Burger">
-            <h2 style="text-align: center;"> Burger</h2>
+
+
+        <div class="container-fluid bg-light" style="background-color:#32325b">
+            <div class="col-md-12 text-center" style="background-color:#32325b;">
+                <button type="button" class="btn btn-primary" >View Full Menu</button>
+                <a href="cart.html" class="button btn btn-success">View Cart</a>
+            </div>
         </div>
-    </div>  
+
+    </div>
+
 </body>
 </html>

@@ -76,7 +76,7 @@ onMenuArray.forEach(function(onMenuObjects) {
   htmlCode =
     htmlCode +
     `
-    <div class="card" style="width: 200px; tw">
+    <div class="card" style="width: 200px; ">
         <img class="card-img-top" src="${onMenuObjects.pictureUrl}"  width="200" height="200" alt="${onMenuObjects.imageAlt}">
         <div class="card-body">
         <h5 class="card-title">${onMenuObjects.label}</h5>
