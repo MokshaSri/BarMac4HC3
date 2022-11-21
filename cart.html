@@ -20,7 +20,7 @@
 
   <nav class="navbar navbar-expand navbar-dark" style="background-color:#32325b">
     <div class="container-fluid">
-        <a class="navbar-brand" href="homepage.html">
+        <a class="navbar-brand" href="index.html">
         Bar McMaster - Table 4 
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
@@ -32,6 +32,12 @@
             <a class="nav-link active" href="">Cart</a>
         </li>
         </ul>
+        <ul class="navbar-nav d-flex flex-row me-1">
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link text-white" href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+        </ul>
+        
     </div>
     </nav>
 </head>
@@ -66,7 +72,7 @@
                           <i class="fas fa-minus"></i>
                         </button>
   
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                        <input id="form1" disabled min="0"  disabled name="quantity" value="1" type="number"
                           class="form-control form-control-sm" />
   
                         <button class="btn btn-link px-2"
@@ -99,7 +105,7 @@
                           <i class="fas fa-minus"></i>
                         </button>
   
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                        <input id="form1" min="0" disabled name="quantity" value="1" type="number"
                           class="form-control form-control-sm" />
   
                         <button class="btn btn-link px-2"
@@ -132,11 +138,10 @@
                           <i class="fas fa-minus"></i>
                         </button>
   
-                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                        <input id="form1" min="0" disabled name="quantity" value="1" type="number"
                           class="form-control form-control-sm" />
   
-                        <button class="btn btn-link px-2"
-                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <button class="btn btn-link px-2">
                           <i class="fas fa-plus"></i>
                         </button>
                       </div>
@@ -174,8 +179,7 @@
                       <h5>$37.95</h5>
                     </div>
                     <div class="d-flex justify-content-between mb-5">
-                    <button type="button" class="btn btn-success btn-block btn-lg"
-                      data-mdb-ripple-color="dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order</button>
+                      <a href="payment.html" class="btn btn-success btn-block btn-lg" >Place Order</a>
                       <a href="categorymenu.html" class="btn btn-primary btn-block btn-lg" >Return To Menu</a>
                   </div>
                 </div>
@@ -187,25 +191,7 @@
     </div>
 
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Order Success</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Order has been placed successfully!
-            </div>
-            <div class="modal-footer">
-              <a href="categorymenu.html" type="button" class="btn btn-success" >Back to Menu</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
 
 
 </body>

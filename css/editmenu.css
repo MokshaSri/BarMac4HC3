@@ -15,7 +15,7 @@
 header{
     height: calc(100vh - 22px);
     background-size: cover;
-    background: #32325b;
+
     padding: 20px 70px;
 
 }
@@ -31,7 +31,7 @@ header{
 html{
 
     background-size: cover;
-    background: #32325b;
+
 
 
 
