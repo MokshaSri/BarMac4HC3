@@ -12,21 +12,31 @@ document.addEventListener('DOMContentLoaded', function() {
         //document.getElementById("incomingOne").style.display = "none";
         document.getElementById("incomingTwo").style.display = "none";
         document.getElementById("incomingThree").style.display = "none";
+        document.getElementById("incomingFour").style.display = "none";
     }
     else if (number == 2) {
         document.getElementById("incomingOne").style.display = "none";
         //document.getElementById("incomingTwo").style.display = "none";
         document.getElementById("incomingThree").style.display = "none";
+        document.getElementById("incomingFour").style.display = "none";
     }
     else if (number == 3) {
         document.getElementById("incomingOne").style.display = "none";
         document.getElementById("incomingTwo").style.display = "none";
         //document.getElementById("incomingThree").style.display = "none";
+        document.getElementById("incomingFour").style.display = "none";
+    }
+    else if (number == 4) {
+        document.getElementById("incomingOne").style.display = "none";
+        document.getElementById("incomingTwo").style.display = "none";
+        document.getElementById("incomingThree").style.display = "none";
+        //document.getElementById("incomingFour").style.display = "none";
     }
     else {
         document.getElementById("incomingOne").style.display = "none";
         document.getElementById("incomingTwo").style.display = "none";
         document.getElementById("incomingThree").style.display = "none";
+        document.getElementById("incomingFour").style.display = "none";
     }
     //console.log("hello world");
  }, false);
