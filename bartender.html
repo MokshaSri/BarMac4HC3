@@ -9,13 +9,14 @@
 	<link href="bootstrap-5.2.2-dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	/>
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-expand navbar-dark" style="background-color: #32325b;">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="homepage.html">
+		<a class="navbar-brand" href="#">
 		Bar McMaster - Bartender
 		</a>
 		<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
@@ -33,6 +34,11 @@
 			<a class="nav-link" href="connect.html">Connect</a>
 		</li>
 		</ul>
+    <ul class="navbar-nav d-flex flex-row me-1">
+      <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link text-white" href="staffsignin.html"><i class="fa fa-sign-out"></i> Logout</a>
+    </li>
+    </ul>
 	</div>
 	</nav>
     <div class="container-fluid">
@@ -47,14 +53,7 @@
         <div class="row">
             <div class="col center-block text-center">
                 <div class="list-group">
-                    <a id="lateOne" href="openorders.html?product=1" class="list-group-item list-group-item-action flex-column align-items-start">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Order Number: 102</h5>
-                        <small>Table Number: 2</small>
-                      </div>
-                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    </a>
-                    <a href="openorders.html?product=2" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <a id="lateOne" href="openorders.html?product=2" class="list-group-item list-group-item-action flex-column align-items-start">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Order Number: 103</h5>
                         <small>Table Number: 7</small>
@@ -68,6 +67,13 @@
                       </div>
                       <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                     </a>
+                    <a href="openorders.html?product=4" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Order Number: 105</h5>
+                        <small>Table Number: 11</small>
+                      </div>
+                      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    </a>
                   </div>
             </div>
             <div class="col center-block text-center">
@@ -78,6 +84,14 @@
                         <small>Table Number: 2</small>
                       </div>
                       <button type="button" class="btn btn-primary" onclick="startNotif()">START</button>
+                      <button type="button" class="btn btn-danger" onclick="delayNotif()">DELAY</button>
+                    </div>
+                    <div id="urgOneB" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Order Number: 102</h5>
+                        <small>Table Number: 2</small>
+                      </div>
+                      <button type="button" class="btn btn-success" onclick="alertNotifB()">DONE</button>
                       <button type="button" class="btn btn-danger" onclick="delayNotif()">DELAY</button>
                     </div>
                     <div id="urgTwo" class="list-group-item list-group-item-action flex-column align-items-start">
